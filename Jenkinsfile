@@ -13,13 +13,19 @@ pipeline {
             } //If I get a merge conflict, the stage will fail and never continue to the Build, Test and Deliver stages.
         }
         stage("Build") {
-            echo "Build stage"
+            steps{
+                echo "Build stage"
+            }
         }
         stage("Test") {
-            echo "Test stage"
+            steps{
+                echo "Test stage"
+            }
         }
         stage("Deliver") {
-            echo "Build stage"
+             steps{
+                echo "Deliver stage"
+            }
         }
     }
 }
